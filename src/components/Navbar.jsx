@@ -10,6 +10,15 @@ const Navbar = () => {
                 <img className="mx-2 w-16 h-16" src={logo} alt="logo" />
             </div>
             <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
+                {/* Resume Download Button */}
+                <a
+                    href="/resume-updated.pdf" // Adjust the path if necessary
+                    download="Shivail_Anand_Resume.pdf"
+                    className='mr-4 text-white bg-purple-500 hover:bg-purple-700 px-4 py-2 rounded-lg'
+                >
+                    Download Resume
+                </a>
+
                 {/* LinkedIn */}
                 <a href="https://www.linkedin.com/in/shivail-anand-02371b221/" target="_blank" rel="noopener noreferrer" className='hover:opacity-80 cursor-pointer'>
                     <FaLinkedin className='text-white' />
